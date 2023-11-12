@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <h1 id="title">DOM MANIPULATION WITH FORMS</h1>
+    <p id="description">Data's filled in the Form will be added in the Table Below</p>
+
+    <form class="formSection bg-light" id="form">
+        <div class="form-group" >
+        <div class="row" >
+            <div class="col">
+             <input type="text" id="first-name" class="form-control firstNameSection" placeholder="First name" required>
+            </div>
+            <div class="col">
+              <input type="text" id="last-name" class="form-control" placeholder="Last name" required>
+            </div>
+            </div>
+            <div class="row selectionSection">
+            <div class="col-sm">
+                <div id="gender">Gender :
+                  <input type="radio" name="gender" value="male"/>Male
+                  <input type="radio" name="gender" value="female"/>Female
+                </div>
+            </div>
+            </div>
+            <div class="row selectionSection optionSection">Favorite Foods :
+            <div class="col-sm">
+                 <select id="mySelect" multiple>
+                  <option>Dosa</option>
+                  <option>Idly</option>
+                  <option>Burger</option>
+                  <option>Pizza</option>
+                  <option>Sandwich</option>
+                 </select>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-sm">
+                    <textarea id="address" placeholder="Address"required></textarea>
+                    
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-sm">
+                <label for="inputZip"></label>
+                <input type="text" class="form-control" id="pincode" placeholder="Pincode" required>
+               
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-sm">
+                <label for="inputCity"></label>
+                <input type="text" class="form-control" id="inputCity" placeholder="State" required>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-sm">
+                <label for="inputCity"></label>
+                <input type="text" class="form-control" id="inputState" placeholder="City" required>
+            </div>
+            </div>
+            <div class="row buttonSection buttonControl">
+            <div class="col-sm buttonCenter ">   
+                <button type="submit" class=" btn btn-primary buttonControl" id="submit" onclick="">Submit</button>
+                        </div>
+            </div>
+        </div>
+</form>
+<div>
+    <table class="table container-sm table-dark tableSection">
+        <thead>
+            <tr>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Foods</th>
+              <th scope="col">Address</th>
+              <th scope="col">Pincode</th>
+              <th scope="col">State</th>
+              <th scope="col">City</th>
+            </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </div>
+</table>
+     
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
